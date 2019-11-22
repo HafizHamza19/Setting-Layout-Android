@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.hafizhamza.setting.MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Lorem dolor sit amet consectetur adipisicing elit,sed do."
+        android:id="@+id/textView3"
+        android:textStyle="bold"
+        android:textSize="15dp"
+        android:layout_marginTop="25dp"
+        android:textIsSelectable="false"
+        android:textColor="#538f6c"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:gravity="center" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="125dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="110dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Line 1"
+            android:id="@+id/textView"
+            android:textColor="#538f6c"
+            android:textStyle="bold" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/editText"
+            android:layout_gravity="center_horizontal"
+            android:hint="Typewrite text.." />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Line 2"
+            android:id="@+id/textView2"
+            android:textColor="#538f6c"
+            android:textStyle="bold" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/editText2"
+            android:layout_gravity="center_horizontal"
+            android:hint="Typewrite text.." />
+
+    </LinearLayout>
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Show Date"
+        android:id="@+id/checkBox"
+        android:checked="false"
+        android:layout_gravity="left|center_vertical"
+        android:textStyle="bold"
+        android:textColor="#538f6c"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="20dp" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Watermark"
+        android:id="@+id/checkBox2"
+        android:layout_gravity="center_vertical|right"
+        android:checked="false"
+        android:textStyle="bold"
+        android:textColor="#538f6c"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="20dp" />
+
+    <Spinner
+        android:id="@+id/spinner1"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_gravity="center"
+        android:spinnerMode="dropdown"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:entries="@array/Option_Resolution"
+        android:prompt="@string/country_prompt"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/abc_ab_share_pack_mtrl_alpha" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="20dp">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/imageView"
+            android:layout_gravity="left|top"
+            android:src="@drawable/copy"
+            android:layout_marginLeft="50dp"
+            android:onClick="Copy" />
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/imageView2"
+            android:layout_gravity="right|top"
+            android:src="@drawable/share"
+            android:layout_marginRight="50dp"
+            android:onClick="Share" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Copy App URL"
+            android:id="@+id/textView4"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="30dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Share"
+            android:id="@+id/textView5"
+            android:layout_gravity="center|right"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="55dp" />
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/imageView3"
+            android:layout_gravity="left|bottom"
+            android:src="@drawable/note"
+            android:layout_marginBottom="18dp"
+            android:layout_marginLeft="50dp"
+            android:onClick="Review" />
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/imageView4"
+            android:layout_gravity="right|bottom"
+            android:src="@drawable/tutorail"
+            android:layout_marginBottom="18dp"
+            android:layout_marginRight="50dp"
+            android:onClick="Tutorial" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Write Review"
+            android:id="@+id/textView6"
+            android:layout_gravity="left|bottom"
+            android:layout_marginLeft="32dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Show Tutorial"
+            android:id="@+id/textView7"
+            android:layout_gravity="right|bottom"
+            android:layout_marginRight="30dp" />
+
+    </FrameLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Resolution Option"
+        android:id="@+id/textView8"
+        android:layout_gravity="left|center_vertical"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="2dp"
+        android:textColor="#538f6c"
+        android:textStyle="bold" />
+
+</FrameLayout>
